@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0;
+  }
+ 
+  .parentSection {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+  }
+ 
+  header,footer{
+    text-align: center;
+    color: #333333;
+    padding: 20px 0;
+  }
+
+  footer {
+    font-style: italic;
+    background: #efefef;
+    width: 70.3%;
+    margin-left: 14.85%;
+  }
+ 
+  main {
+    border-top: 5px solid #cccccc;
+    background: #efefef;
+    display: flex;
+  }
+ 
+  ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 72%;
+    width: 100%;
+  }
+ 
+  ul li {
+    color: #ffffff;
+    width: 33.33%;
+    padding: 50px 0;
+    font-size: 30px;
+    list-style: none;
+  }
+ 
+  [list-item='1'],
+  [list-item='8'] {
+    background: #6f98a8;
+  }
+ 
+  [list-item='2'],
+  [list-item='4'] {
+    background: #2b8ead;
+  }
+ 
+  [list-item='3'],
+  [list-item='5'],
+  [list-item='9'] {
+    background: #2f454e;
+  }
+ 
+  [list-item='6'],
+  [list-item='7'] {
+    background: #bfbfbf;
+  }
+ 
+  .button-group {
+    width: 25%;
+    margin-left: 1.5%;
+    text-align: center;
+  }
+ 
+  .button-group button {
+    color: #ffffff;
+    max-width: 260px;
+    width: 100%;
+    font-size: 14px;
+    padding: 14px 0;
+    background: #72c3dc;
+    border: 1px solid #2b8ead;
+    border-radius: 7px;
+    box-shadow: 0px 7px 0px #2b8ead;
+    margin-top: 30px;
+    text-shadow: 0.5px 0.5px 0.5px #2b8ead;
+    transition: All 300ms ease;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+ 
+  button:active {
+    box-shadow: none !important;
+    top: 8px;
+  }
+ 
+  @media screen and (min-width:320px) and (max-width: 768px) {
+    header {
+      padding: 15px 0;
+      background: #333333;
+      color: #ffffff;
+    }
+
+    footer {
+      background: transparent;
+      width: 100%;
+    }
+ 
+    main {
+      background: transparent;
+      flex-direction: column-reverse;
+    }
+ 
+    ul {
+      flex-direction: column;
+      background: transparent;
+      max-width: 92%;
+      margin: auto;
+    }
+ 
+    ul li {
+      margin-bottom: 7px;
+      color: #333333;
+      padding: 20px 0;
+      width: 100%;
+      max-width: 100%;
+    }
+ 
+    .button-group {
+      width: 100%;
+      display: flex;
+      margin: 17px 0 25px;
+      justify-content: space-evenly;
+    }
+ 
+    .button-group button {
+      max-width: 40%;
+      margin: 0;
+      font-size: 12px;
+    }
+ 
+    [list-item='1'],
+    [list-item='8'] {
+      background: #efefef;
+      border-left: 5px solid #6f98a8;
+    }
+ 
+    [list-item='2'],
+    [list-item='4'] {
+      background: #efefef;
+      border-left: 5px solid #2b8ead;
+    }
+ 
+    [list-item='3'],
+    [list-item='5'],
+    [list-item='9'] {
+      background: #efefef;
+      border-left: 5px solid #2f454e;
+    }
+ 
+    [list-item='6'],
+    [list-item='7'] {
+      background: #efefef;
+      border-left: 5px solid #bfbfbf;
+    }
+  }
